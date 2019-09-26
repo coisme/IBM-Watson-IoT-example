@@ -140,6 +140,7 @@ mosquitto_sub -h ${host} -p ${port} -q 1\
 ## デバイスからメッセージを送る
 
 ボード上のユーザーボタンを押すと、デバイスはメッセージトピック`iot-2/evt/myevt/fmt/text`をパブリッシュします。
+Seeed Wio 3Gを使う場合は、D20コネクタにプッシュスイッチ（Grove Button）を取り付けてください。
 
 
 ```
