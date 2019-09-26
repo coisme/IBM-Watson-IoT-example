@@ -157,7 +157,7 @@ Message published.
 アプリケーションは、上記のスクリプトで指定されたトピックを介してWatson IoT Platformからメッセージを受け取ります。
 
 ```
-lient a:xxxxx:apitest sending CONNECT
+Client a:xxxxx:apitest sending CONNECT
 Client a:xxxxx:apitest received CONNACK (0)
 Client a:xxxxx:apitest sending SUBSCRIBE (Mid: 1, Topic: iot-2/type/mbed-os-dev-1/id/112233/evt/start/fmt/text, QoS: 1, Options: 0x00)
 Client a:xxxxx:apitest received SUBACK
@@ -178,7 +178,7 @@ Message #1 from 112233.
 
 Mosquittoを使用して、メッセージをアプリケーションとして送信します。以下のスクリプトの`orgId`, `cafile`, `password`, `username`, `deviceType`, 及び`deviceId`を変更してください。
 
-```
+```shell
 #!/bin/tcsh
  
 set orgId="<< YOUR ORG ID >>"
