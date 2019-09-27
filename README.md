@@ -114,7 +114,7 @@ To send a packet, push the button 1 on your board.
 
 Mosquittoのアプリケーションを起動するには、ターミナルからスクリプトを実行します。以下のスクリプトの`orgId`, `cafile`, `password`, `username`, `deviceType`, 及び`deviceId`を変更してください。
 
-```shell
+```shell:application_recv_evt.sh
 #!/bin/tcsh
  
 set orgId="<< YOUR ORG ID >>"
@@ -183,7 +183,7 @@ Message #1 from 112233.
 
 Mosquittoを使用して、メッセージをアプリケーションとして送信します。以下のスクリプトの`orgId`, `cafile`, `password`, `username`, `deviceType`, 及び`deviceId`を変更してください。
 
-```shell
+```shell:application_send_cmd.sh
 #!/bin/tcsh
  
 set orgId="<< YOUR ORG ID >>"
