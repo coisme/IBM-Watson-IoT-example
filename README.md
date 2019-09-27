@@ -139,13 +139,13 @@ mosquitto_sub -h ${host} -p ${port} -q 1\
     --cafile ${cafile}\
     -V mqttv311
 ```
+
 アプリケーションスクリプトを実行させると、メッセージを受信することが出来ます。
 
 ## デバイスからメッセージを送る
 
 ボード上のユーザーボタンを押すと、デバイスはメッセージトピック`iot-2/evt/myevt/fmt/text`をパブリッシュします。
 Seeed Wio 3Gを使う場合は、D20コネクタにプッシュスイッチ（Grove Button）を取り付けてください。
-
 
 ```
 To send a packet, push the button 1 on your board.
@@ -206,6 +206,7 @@ mosquitto_pub -h "${host}" -p 8883\
         -m "`date`"\
         --cafile "${cafile}"
 ```
+
 スクリプトを実行すると、`date`コマンドの出力をメッセージとして送信します。デバイスは受信したコマンドをログとして表示します。
 
 ```
