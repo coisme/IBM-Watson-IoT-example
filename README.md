@@ -1,5 +1,7 @@
 # Mbed OSデバイスからIBM Watson IoT Platformに接続する手順
 
+English page is [here](https://os.mbed.com/users/coisme/notebook/ibm-watson-iot-from-mbed-os-device/).
+
 このページでは、Mbed OSデバイスからIBM Watson IoT Platformに接続する手順を説明します。
 
 ![](https://os.mbed.com/media/uploads/coisme/ibm-001.png)
