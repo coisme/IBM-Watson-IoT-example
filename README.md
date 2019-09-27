@@ -49,7 +49,9 @@ English page is [here](https://os.mbed.com/users/coisme/notebook/ibm-watson-iot-
 
 ![](https://os.mbed.com/media/uploads/coisme/ms-003.png)
 
-`Source URL`にリポジトリのURL（https://github.com/coisme/Mbed-to-IBM-Watson-IoT）を入力します。
+`Source URL`にリポジトリのURLを入力します。
+
+https://github.com/coisme/Mbed-to-IBM-Watson-IoT
 
 ![](https://os.mbed.com/media/uploads/coisme/ibm-002.png)
 
