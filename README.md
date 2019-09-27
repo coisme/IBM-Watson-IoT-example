@@ -127,7 +127,7 @@ set deviceId="<< YOUR DEVICE ID >>"
 set cid="a:${orgId}:apitest"
 set host="${orgId}.messaging.internetofthings.ibmcloud.com"
 set port=8883
-set eventId="myenv"
+set eventId="myevt"
 set topic="iot-2/type/${deviceType}/id/${deviceId}/evt/${eventId}/fmt/text"
  
 mosquitto_sub -h ${host} -p ${port} -q 1\
