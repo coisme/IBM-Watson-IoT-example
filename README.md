@@ -94,8 +94,8 @@ Connection established.
 MQTT client is connecting to the service ...
 Client connected.
 
-Client is trying to subscribe a topic "iot-2/cmd/myevt/fmt/text".
-Client has subscribed a topic "iot-2/cmd/myevt/fmt/text".
+Client is trying to subscribe a topic "iot-2/cmd/mycmd/fmt/text".
+Client has subscribed a topic "iot-2/cmd/mycmd/fmt/text".
 
 To send a packet, push the button 1 on your board.
 ```
@@ -127,7 +127,7 @@ set deviceId="<< YOUR DEVICE ID >>"
 set cid="a:${orgId}:apitest"
 set host="${orgId}.messaging.internetofthings.ibmcloud.com"
 set port=8883
-set eventId="start"
+set eventId="myenv"
 set topic="iot-2/type/${deviceType}/id/${deviceId}/evt/${eventId}/fmt/text"
  
 mosquitto_sub -h ${host} -p ${port} -q 1\
@@ -150,11 +150,11 @@ Seeed Wio 3Gを使う場合は、D20コネクタにプッシュスイッチ（Gr
 ```
 To send a packet, push the button 1 on your board.
 
-Publishing message to the topic iot-2/evt/start/fmt/text:
+Publishing message to the topic iot-2/evt/myevt/fmt/text:
 Message #0 from 112233.
 Message published.
 
-Publishing message to the topic iot-2/evt/start/fmt/text:
+Publishing message to the topic iot-2/evt/myevt/fmt/text:
 Message #1 from 112233.
 Message published.
 ```
@@ -164,14 +164,14 @@ Message published.
 ```
 Client a:xxxxx:apitest sending CONNECT
 Client a:xxxxx:apitest received CONNACK (0)
-Client a:xxxxx:apitest sending SUBSCRIBE (Mid: 1, Topic: iot-2/type/mbed-os-dev-1/id/112233/evt/start/fmt/text, QoS: 1, Options: 0x00)
+Client a:xxxxx:apitest sending SUBSCRIBE (Mid: 1, Topic: iot-2/type/mbed-os-dev-1/id/112233/evt/myevt/fmt/text, QoS: 1, Options: 0x00)
 Client a:xxxxx:apitest received SUBACK
 Subscribed (mid: 1): 1
 Client a:xxxxx:apitest sending PINGREQ
 Client a:xxxxx:apitest received PINGRESP
-Client a:xxxxx:apitest received PUBLISH (d0, q0, r0, m0, 'iot-2/type/mbed-os-dev-1/id/112233/evt/start/fmt/text', ... (23 bytes))
+Client a:xxxxx:apitest received PUBLISH (d0, q0, r0, m0, 'iot-2/type/mbed-os-dev-1/id/112233/evt/myevt/fmt/text', ... (23 bytes))
 Message #0 from 112233.
-Client a:xxxxx:apitest received PUBLISH (d0, q0, r0, m0, 'iot-2/type/mbed-os-dev-1/id/112233/evt/start/fmt/text', ... (23 bytes))
+Client a:xxxxx:apitest received PUBLISH (d0, q0, r0, m0, 'iot-2/type/mbed-os-dev-1/id/112233/evt/myevt/fmt/text', ... (23 bytes))
 Message #1 from 112233.
 ```
 
@@ -195,7 +195,7 @@ set cafile="<<path to >>/IoTFoundation.pem"
  
 set host="${orgId}.messaging.internetofthings.ibmcloud.com"
 set cid="a:${orgId}:apitest"
-set cmdId="myevt"
+set cmdId="mycmd"
 set topic="iot-2/type/${deviceType}/id/${deviceId}/cmd/${cmdId}/fmt/text"
  
 mosquitto_pub -h "${host}" -p 8883\
@@ -224,8 +224,8 @@ Connection established.
 MQTT client is connecting to the service ...
 Client connected.
 
-Client is trying to subscribe a topic "iot-2/cmd/myevt/fmt/text".
-Client has subscribed a topic "iot-2/cmd/myevt/fmt/text".
+Client is trying to subscribe a topic "iot-2/cmd/mycmd/fmt/text".
+Client has subscribed a topic "iot-2/cmd/mycmd/fmt/text".
 
 To send a packet, push the button 1 on your board.
 
