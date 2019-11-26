@@ -25,7 +25,7 @@ English page is [here](https://os.mbed.com/users/coisme/notebook/ibm-watson-iot-
 
 ## Watson IoT Platformサービスの設定
 
-[この資料](https://www.ibm.com/developerworks/cloud/library/cl-mqtt-bluemix-iot-node-red-app/index.html)のstep 1を参照してWatson IoT Platformをセットアップします。以下のパラメータをメモしてください。
+[この資料](https://developer.ibm.com/tutorials/cl-mqtt-bluemix-iot-node-red-app/)のstep 1を参照してWatson IoT Platformをセットアップします。以下のパラメータをメモしてください。
 
 デバイス側
 
